@@ -7,6 +7,16 @@ import { SharedModule } from './shared/shared.module';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Configuracion del local de la app
+
+import localeEsHN from '@angular/common/locales/es-DO';
+import localeFrCA from '@angular/common/locales/fr-CA';
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsHN);
+registerLocaleData(localeFrCA);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
